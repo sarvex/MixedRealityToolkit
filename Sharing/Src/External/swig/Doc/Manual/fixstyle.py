@@ -8,7 +8,7 @@ import string
 filename = sys.argv[1]
 
 data = open(filename).read()
-open(filename+".bak","w").write(data)
+open(f"{filename}.bak", "w").write(data)
 
 swigstyle = "\n" + open("style.css").read()
 
